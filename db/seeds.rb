@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+#Checklist Data 
+
+checklist1 = Checklist.create([{name: 'Blue Diamond'}])
+
+checklist1.items.create([
+    {item_name: "bubblegum", item_category: "Snack", item_weight: 0.3}, {item_name: "3 Musketeers", item_category: "Snacks", item_weight: 0.5}
+])
