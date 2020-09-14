@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-    has_many: checklists
+    has_many :checklists
 end
