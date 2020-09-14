@@ -16,7 +16,7 @@ class Api::V1::UsersController < ApplicationController
         if @user.save
             render json: @user
         else
-            render error: { error 'Unable to create User :('}, status: 400
+            render error: { error: 'Unable to create User :('}, status: 400
         end
     end
     #PATCH /users/:id
@@ -26,10 +26,19 @@ class Api::V1::UsersController < ApplicationController
             @user.update(user_params)
             render json: { message: 'User successfully updated!'}, status: 200
         else 
-            render json: { message: 'Unable to update User :('}, status: 400
+            render json: {error: 'Unable to update User :('}, status: 400
         end
     end
     #DELETE /users/:id
+    def destroy
+        @user = User.find(params[:id])
+        if @user 
+            @user.destroy 
+            render json: {message: 'User successfully deleted!'}, status: 200
+        else
+            render json: {error: 'Unable to delete User.'}, status: 400
+        end
+    end
 
 
 
