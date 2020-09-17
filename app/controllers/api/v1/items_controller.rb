@@ -1,4 +1,4 @@
-class Api::V1::itemsController < ApplicationController
+class Api::V1::ItemsController < ApplicationController
     before_action :find_item, only: [:show, :update, :destroy]
 
     # GET /items
@@ -50,10 +50,5 @@ item
     def find_item
         @item = item.find(params[:id])
     end
-
-
-
-
-
-
+end
 end

@@ -43,7 +43,7 @@ class Api::V1::ChecklistsController < ApplicationController
 
     #strong params 
     def checklist_params
-        params.require(:checklist).permit(:name, :item_name, :item_category, user_id)
+        params.require(:checklist).permit(:name)
     end
 
     def find_checklist
