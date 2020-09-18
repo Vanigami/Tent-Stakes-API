@@ -3,7 +3,7 @@ class Api::V1::ItemsController < ApplicationController
 
     # GET /items
     def index
-        @items = item.all 
+        @items = Item.all 
         render json: @items
     end
 
