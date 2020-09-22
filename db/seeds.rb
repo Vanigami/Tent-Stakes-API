@@ -20,4 +20,13 @@ user1 = User.create({username: 'Wasabi', password_digest: "fumanchu"})
 checklist1 = Checklist.create({name: "Blue Diamond", user_id: 1})
 
 item1 = Item.create({item_name: "Tent", item_category: "Campsite", item_weight: 2.5, checklist_id: 1})
+item2 = Item.create({item_name: "Sleeping bag", item_category: "Campsite", item_weight: 1, checklist_id: 1})
+item3 = Item.create({item_name: "Pillow", item_category: "Campsite", item_weight: 0.5, checklist_id: 1})
+item4 = Item.create({item_name: "Headlamp", item_category: "Campsite", item_weight: 0.25, checklist_id: 1})
+item5 = Item.create({item_name: "Flashlight", item_category: "Campsite", item_weight: 0.25, checklist_id: 1})
+item6 = Item.create({item_name: "Batteries", item_category: "Campsite", item_weight: 0.01, checklist_id: 1})
+item7 = Item.create({item_name: "Camp Chair", item_category: "Campsite", item_weight: 1.5, checklist_id: 1})
+item8 = Item.create({item_name: "Camp Table", item_category: "Campsite", item_weight: 2, checklist_id: 1})
+
+
 
