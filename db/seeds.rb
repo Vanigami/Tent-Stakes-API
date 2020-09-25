@@ -14,6 +14,9 @@
 # checklist1.items.create([
 #     {item_name: "bubblegum", item_category: "Snack", item_weight: 0.3}, {item_name: "3 Musketeers", item_category: "Snacks", item_weight: 0.5}
 # ])
+User.destroy_all
+Checklist.destroy_all
+Item.destroy_all
 
 user1 = User.create({username: 'Wasabi', password_digest: "fumanchu"})
 
