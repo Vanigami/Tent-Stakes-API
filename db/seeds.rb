@@ -44,6 +44,9 @@ item17 = Item.create({item_name: "Camp Table", item_category: "Campsite", item_w
 item18 = Item.create({item_name: "Lantern", item_category: "Campsite", item_weight: 1, checklist_id: 2})
 item19 = Item.create({item_name: "Sunshade", item_category: "Campsite", item_weight: 0.3, checklist_id: 2})
 item20 = Item.create({item_name: "Mulit-tool", item_category: "Tools & Repair", item_weight: 0.4, checklist_id: 2})
+item21 = Item.create({item_name: "Duct tape", item_category: "Tools & Repair", item_weight: 0.06, checklist_id: 2})
+
+
 
 
 
