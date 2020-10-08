@@ -11,7 +11,7 @@ class Api::V1::ItemsController < ApplicationController
     def show 
      
         render json: @item
-item
+    end
     #POST /items
     def create 
      @item = item.new(item_params)
